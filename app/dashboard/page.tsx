@@ -5,6 +5,7 @@ export default function Dashboard() {
                 {/* Section 1 */}
                 <div className="SECTION-001">
                     <div className="ladi-section-background">
+                        ver 1.0
                     </div>
                 </div>
 
