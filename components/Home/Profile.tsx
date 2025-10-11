@@ -8,11 +8,11 @@ import MotionWrapper from "../Effect/MotionWrapperProps";
 import NumberJump from "../Effect/NumberJump";
 
 
-const bio = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ab accusantium temporibus facere corrupti delectus sint blanditiis earum..."
+const bio = "I'm a fullstack developer who loves the vibe of coding — turning ideas into clean, smooth experiences from front to back."
 
 export default function Profile() {
     return (
-        <div className="w-full my-20">
+        <div className="w-full my-20 h-screen">
             <div className="flex w-full md:items-center flex-col md:flex-row relative overflow-hidden">
                 {/* Left */}
                 <MotionWrapper duration={0.5}>
@@ -25,8 +25,8 @@ export default function Profile() {
 
                         {/* Main headline */}
                         <MotionWrapper animation="fadeLeft" delay={0.5}>
-                            <h1 className="text-4xl md:text-7xl font-bold mb-2 tracking-wide">Hello I'm</h1>
-                            <h5 className="text-4xl md:text-7xl font-bold mb-4 text-emerald-300 tracking-wide">SUBACITO</h5>
+                            <h1 className="text-4xl md:text-7xl font-bold mb-2 ">Hi, I'm</h1>
+                            <h5 className="text-4xl md:text-7xl font-bold mb-4 text-emerald-300 ">SUBACITO</h5>
                         </MotionWrapper>
 
 
@@ -66,14 +66,14 @@ export default function Profile() {
                 </MotionWrapper>
 
                 {/* Right */}
-                <div className="flex-1 flex justify-center md:justify-end absolute md:relative opacity-40 right-[-60px] -z-10 md:opacity-100" >
+                <div className="flex-1 flex justify-center md:justify-end absolute md:relative opacity-40 right-[-60px] z-100 md:opacity-100" >
                     <MotionWrapper animation="fadeRight" duration={0.5}>
                         <div className="w-80 h-80 md:w-150 md:h-150 relative">
-                            <div className="w-full h-full flex items-center justify-center">
+                            <div className="w-full h-full flex items-center justify-center ">
                                 <img
                                     src="https://res.cloudinary.com/dqady8ru5/image/upload/v1758553023/Gemini_Generated_Image_8ckulq8ckulq8cku_buumyh.png"
                                     alt="Profile picture"
-                                    className="object-cover rounded-lg px-4 "
+                                    className="object-cover  px-4"
                                 />
                             </div>
                         </div>

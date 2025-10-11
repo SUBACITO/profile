@@ -8,7 +8,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="bg-gray-800 text-white w-full z-50">
+    <header className="bg-gradient-to-b from-gray-950 text-white w-full z-50">
       <nav className="max-w-7xl mx-auto flex items-center justify-between p-4">
         {/* Logo / Brand */}
         <div className="text-3xl font-bold">
