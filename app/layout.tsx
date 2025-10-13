@@ -21,8 +21,8 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DEV SUBACITO",
-  description: "Hello World!",
+  title: "Nguyễn Trần Giang Vỹ - Fullstack Developer - SUBACITO",
+  description: "🌻 Code là nghệ thuật, còn tôi chỉ đang vẽ nên từng dòng 🌻",
 };
 
 export default function RootLayout({
@@ -35,7 +35,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${jetbrains.className} antialiased`} 
       >
-        {/* <Header/> */}
+        <Header/>
         {children}
         <Footer/>
       </body>

@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { FiMenu, FiX } from 'react-icons/fi'
+import Image from "next/image";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -11,13 +12,19 @@ export default function Header() {
     <header className="bg-gradient-to-b from-gray-950 text-white w-full z-50">
       <nav className="max-w-7xl mx-auto flex items-center justify-between p-4">
         {/* Logo / Brand */}
-        <div className="text-3xl font-bold">
-          <Link href="/">SUBACITO .</Link>
+        <div className="text-3xl font-bold ">
+          <Link href="/" className='flex items-center gap-2'>
+            <div className="relative w-15 h-15">
+              <Image src="/images/daisy-logo.png" alt="Logo" fill className="object-contain" />
+             
+            </div>
+           SUBA Code Bậy
+          </Link>
         </div>
 
         {/* Desktop navigation links */}
         <ul className="hidden md:flex gap-6">
-          <li>
+          {/* <li>
             <Link href="/" className="hover:text-gray-300">About me</Link>
           </li>
           <li>
@@ -31,7 +38,7 @@ export default function Header() {
           </li>
           <li>
             <Link href="/contact" className="hover:text-gray-300">Courses</Link>
-          </li>
+          </li> */}
         </ul>
 
         {/* Mobile menu toggle */}

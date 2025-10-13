@@ -1,14 +1,15 @@
 'use client'
 
 import Image from "next/image";
-import { FiGithub, FiLinkedin } from 'react-icons/fi';
+import { FiFacebook, FiGithub, FiLinkedin } from 'react-icons/fi';
 import TypingText from "../Effect/TypingText";
 import { motion } from 'framer-motion';
 import MotionWrapper from "../Effect/MotionWrapperProps";
 import NumberJump from "../Effect/NumberJump";
+import { FaStackOverflow } from "react-icons/fa";
 
 
-const bio = "I'm a fullstack developer who loves the vibe of coding — turning ideas into clean, smooth experiences from front to back."
+const bio = "Mình là một Fullstack Developer kiêm luôn cả Game Developer, và đủ thứ er er khác =))"
 
 export default function Profile() {
     return (
@@ -25,8 +26,9 @@ export default function Profile() {
 
                         {/* Main headline */}
                         <MotionWrapper animation="fadeLeft" delay={0.5}>
-                            <h1 className="text-4xl md:text-7xl font-bold mb-2 ">Hi, I'm</h1>
+                            
                             <h5 className="text-4xl md:text-7xl font-bold mb-4 text-emerald-300 ">SUBACITO</h5>
+                            <h1 className="text-4xl md:text-4xl font-bold mb-2 ">🌻Hé lu, mọi người</h1>
                         </MotionWrapper>
 
 
@@ -44,19 +46,19 @@ export default function Profile() {
                         {/* Button */}
                         <MotionWrapper animation="fadeRight" delay={1.5}>
                             <div className="w-full flex flex-col sm:flex-row py-3 gap-3 sm:gap-5">
-                                <button className="border border-emerald-300 rounded-lg px-5 py-3 hover:bg-emerald-800">Download CV</button>
+                                <button className="border cursor-pointer border-emerald-300 rounded-lg px-5 py-3 hover:bg-emerald-800">Download CV</button>
                                 <div className="flex items-center gap-5 mx-5">
-                                    <button className="w-10 h-10 flex items-center justify-center border border-emerald-300 rounded-full bg-black hover:bg-emerald-800 transition-colors">
+                                    <button  onClick={() => window.open('https://github.com/SUBACITO', '_blank')} className="w-10 h-10 flex items-center cursor-pointer justify-center border border-emerald-300 rounded-full bg-black hover:bg-emerald-800 transition-colors">
                                         <FiGithub size={24} className="text-white" />
                                     </button>
-                                    <button className="w-10 h-10 flex items-center justify-center border border-emerald-300 rounded-full bg-black hover:bg-emerald-800 transition-colors">
+                                    <button className="w-10 h-10 flex items-center cursor-pointer justify-center border border-emerald-300 rounded-full bg-black hover:bg-emerald-800 transition-colors">
                                         <FiLinkedin size={24} className="text-white" />
                                     </button>
-                                    <button className="w-10 h-10 flex items-center justify-center border border-emerald-300 rounded-full bg-black hover:bg-emerald-800 transition-colors">
-                                        <FiGithub size={24} className="text-white" />
+                                    <button  onClick={() => window.open('https://stackoverflow.com/users/30547654/mr-v%e1%bb%b9', '_blank')} className="w-10 h-10 flex items-center cursor-pointer justify-center border border-emerald-300 rounded-full bg-black hover:bg-emerald-800 transition-colors">
+                                        <FaStackOverflow  size={24} className="text-white" />
                                     </button>
-                                    <button className="w-10 h-10 flex items-center justify-center border border-emerald-300 rounded-full bg-black hover:bg-emerald-800 transition-colors">
-                                        <FiLinkedin size={24} className="text-white" />
+                                    <button className="w-10 h-10 flex items-center cursor-pointer justify-center border border-emerald-300 rounded-full bg-black hover:bg-emerald-800 transition-colors">
+                                        <FiFacebook onClick={() => window.open('https://fb.com/SUBACITO', '_blank')}  size={24} className="text-white" />
                                     </button>
                                 </div>
                             </div>
@@ -87,29 +89,29 @@ export default function Profile() {
                         <div className="flex-1">
                             <h2 className="text-5xl font-bold"><NumberJump from={0} to={5} /></h2>
                         </div>
-                        <div className="flex-1 px-2">
-                            <h3>Years of </h3>
-                            <h3>experience</h3>
+                        <div className="px-2">
+                            <span>Năm </span>
+                            <h3>Kinh nghiệm</h3>
                         </div>
                     </div>
 
                     <div className="flex">
                         <div className="flex-1">
-                            <h2 className="text-5xl font-bold"><NumberJump from={0} to={23} /></h2>
+                            <h2 className="text-5xl font-bold"><NumberJump from={0} to={20} /></h2>
                         </div>
-                        <div className="flex-1 px-2">
-                            <h3>Projects</h3>
-                            <h3>completed</h3>
+                        <div className="px-2">
+                            <span>Dự án </span>
+                            <h3>Đã hoàn thành</h3>
                         </div>
                     </div>
 
                     <div className="flex">
                         <div className="flex-1">
-                            <h2 className="text-5xl font-bold"><NumberJump from={0} to={7} /></h2>
+                            <h2 className="text-5xl font-bold"><NumberJump from={0} to={6} /></h2>
                         </div>
-                        <div className="flex-1 px-2">
-                            <h3>Technologies</h3>
-                            <h3>mastered</h3>
+                        <div className="px-2">
+                            <span>Frameworks </span>
+                            <h3>thuần thục</h3>
                         </div>
                     </div>
 
@@ -117,11 +119,12 @@ export default function Profile() {
                         <div className="flex-1">
                             <h2 className="text-5xl font-bold"><NumberJump from={0} to={1000} /></h2>
                         </div>
-                        <div className="flex-1 px-2">
-                            <h3>Code</h3>
+                        <div className="px-2">
+                            <span>Code </span>
                             <h3>commits</h3>
                         </div>
                     </div>
+                   
                 </div>
             </MotionWrapper>
 

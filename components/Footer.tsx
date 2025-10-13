@@ -9,7 +9,7 @@ export default function Footer() {
         <div>
           <h2 className="text-xl font-bold mb-2 text-center">SUBACITO</h2>
           <p className="text-sm text-gray-400">
-            © 2021. All rights reserved.
+           Bachelor Degree @LHU University, Vietnam (2021 - 2025)
           </p>
         </div>
 

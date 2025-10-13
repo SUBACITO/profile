@@ -18,7 +18,7 @@ export default function Journey({ steps }: JourneyProps) {
 
  return (
     <div className="relative w-full max-w-4xl mx-auto py-12 px-4 mb-50">
-      <h2 className="text-3xl font-bold text-center mb-12">My Journey</h2>
+      <h2 className="text-3xl font-bold text-center mb-12 uppercase">Hành trình của mình</h2>
 
       {/* Timeline line */}
       <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-300" />
@@ -45,7 +45,7 @@ export default function Journey({ steps }: JourneyProps) {
                   <p className="text-sm text-gray-500 mb-2">{step.date}</p>
                 )}
                 {step.description && (
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-gray-500 leading-relaxed">
                     {step.description}
                   </p>
                 )}
