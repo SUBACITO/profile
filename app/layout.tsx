@@ -23,6 +23,9 @@ const jetbrains = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Nguyễn Trần Giang Vỹ - Fullstack Developer - SUBACITO",
   description: "🌻 Code là nghệ thuật, còn tôi chỉ đang vẽ nên từng dòng 🌻",
+   verification: {
+    google: "enyhwTEjBw5nLh0t9ryVaHSStfkSna9o94hrazTKebo",
+  },
 };
 
 export default function RootLayout({
