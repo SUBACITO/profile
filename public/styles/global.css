@@ -24,3 +24,23 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.about-page {
+  --background: #fef7f1;
+  --foreground: #222;
+}
+
+.about-page body,
+.about-page {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.glass-section {
+	@apply bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 shadow-lg transition-all duration-300 hover:bg-white/10;
+}
+
+.section-title {
+	@apply text-2xl font-semibold mb-4 text-purple-400;
+}
