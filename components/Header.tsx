@@ -24,21 +24,12 @@ export default function Header() {
 
         {/* Desktop navigation links */}
         <ul className="hidden md:flex gap-6">
-          {/* <li>
-            <Link href="/" className="hover:text-gray-300">About me</Link>
+          <li>
+            <Link href="/" className="hover:text-gray-300">@</Link>
           </li>
           <li>
-            <Link href="/about" className="hover:text-gray-300">Services</Link>
+            <Link href="/about" className="hover:text-gray-300">About</Link>
           </li>
-          <li>
-            <Link href="/blog" className="hover:text-gray-300">Goals</Link>
-          </li>
-          <li>
-            <Link href="/contact" className="hover:text-gray-300">Partner</Link>
-          </li>
-          <li>
-            <Link href="/contact" className="hover:text-gray-300">Courses</Link>
-          </li> */}
         </ul>
 
         {/* Mobile menu toggle */}
@@ -58,19 +49,10 @@ export default function Header() {
         </div>
         <ul className="flex flex-col gap-6 mt-10 ml-6 text-lg">
           <li>
-            <Link href="/" className="hover:text-gray-300" onClick={() => setIsOpen(false)}>About me</Link>
+            <Link href="/" className="hover:text-gray-300" onClick={() => setIsOpen(false)}>@</Link>
           </li>
           <li>
-            <Link href="/about" className="hover:text-gray-300" onClick={() => setIsOpen(false)}>Services</Link>
-          </li>
-          <li>
-            <Link href="/blog" className="hover:text-gray-300" onClick={() => setIsOpen(false)}>Goals</Link>
-          </li>
-          <li>
-            <Link href="/contact" className="hover:text-gray-300" onClick={() => setIsOpen(false)}>Partner</Link>
-          </li>
-          <li>
-            <Link href="/contact" className="hover:text-gray-300" onClick={() => setIsOpen(false)}>Courses</Link>
+            <Link href="/about" className="hover:text-gray-300" onClick={() => setIsOpen(false)}>About</Link>
           </li>
         </ul>
       </div>

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 export default function AboutPage() {
 	return (
-		<div className="min-h-screen bg-gradient-to-b from-gray-950 via-gray-900 to-gray-800 text-gray-100">
+		<div className="min-h-screen bg-gradient-to-b from-gray-950 to-gray-800 text-gray-100">
 			<div className="max-w-4xl mx-auto px-6 py-16">
 				{/* Avatar + Intro */}
 				<section className="text-center mb-16">
@@ -55,7 +55,7 @@ export default function AboutPage() {
 					transition={{ duration: 0.4, delay: 0.1 }}
 					viewport={{ once: true }}
 				>
-					<h2 className="section-title">Về trang SUBA code bậy</h2>
+					<h2 className="section-title">Tớ là ai?</h2>
 					<p>
 						Mình sinh ra trong một gia đình khá bình thường, phụ huynh có vẻ khá dễ tính nên
 					đây cũng có lẽ là một trong những nguyên nhân mình được tiếp xúc với máy tính khá
@@ -93,13 +93,16 @@ export default function AboutPage() {
 						Không chỉ dán mắt vào máy tính hàng giờ liền, hãy nhớ rằng bạn vẫn còn cuộc sống riêng —
 						còn gia đình và bạn bè nữa. Hãy cân bằng để không bỏ lỡ những điều đẹp nhất nhé 💖.
 					</p>
-					<img
-						src="https://lh3.googleusercontent.com/sitesv/AICyYdbIEhTa7wRYEJkq3elxcr93aYXexfSVHHOThYJ9PyXELnipkXNLiG95v7ElgIqNZbVKc2kYZ8DrPcPMtAQzLWjJ9bEfaRh94mrWBEDQwnOxd7KX9tpNjmmgpJAG07gsB7KLqvVUJgj-rWzQPuam6AxENGJ08sbImN1t2gQ5eCLaDHSFial31lanltRIGNrY3vRYw3E7RELdxI6NNfsSi-D4Ck25dOzNzjCZV9o=w1280"
+					<div className='w-full flex justify-center' >
+						<img 
+						src="https://scontent.fsgn2-9.fna.fbcdn.net/v/t39.30808-6/489790310_2065645380515103_8772902427832805212_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEuTnK_fL66GiK504tmVa3pbgQmBtpAXrFuBCYG2kBesVlgWHST8zo7YanKuzZmuGRZpn_QWIpPJhU-3TMH--M1&_nc_ohc=fXysAjPBg9gQ7kNvwEg2rOK&_nc_oc=AdkWyp_NcVkiSVuGO6wx9Ezop58ohH8f-8A6gFGQZKw1Ch1gvqKdgbtw_K5xGYLUnHg&_nc_zt=23&_nc_ht=scontent.fsgn2-9.fna&_nc_gid=HdEJ4PtqBKkpu1GLyh4hLQ&oh=00_AfcCLNw4oCDVlfAT4GyaRVbscTfkSg6EKCmeXgpxsBbZ_A&oe=6900B392"
 						alt="Chill"
-						width={800}
-						height={500}
+						width={500}
+						height={300}
 						className="rounded-2xl mt-6 shadow-lg"
 					/>
+					</div>
+					
 				</motion.section>
 
 				{/* Mục tiêu */}
