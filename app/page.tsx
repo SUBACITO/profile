@@ -4,6 +4,11 @@ import "@/public/styles/home.css";
 import Skills from "@/components/Home/Skills";
 import FluidBackground from '@/components/Effect/FluidBackground'
 
+export const metadata = {
+  title: "Nguyễn Trần Giang Vỹ | Fullstack Developer",
+  description: "Mình là một Fullstack Developer kiêm luôn cả Game Developer, và đủ thứ 'er' khác =))",
+};
+
 
 export default function Home() {
   const steps = [

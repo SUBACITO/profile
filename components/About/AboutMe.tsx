@@ -1,7 +1,5 @@
-'use client'
+import ClientMotionWrapper from "@/components/ClientMotionWrapper";
 
-import Image from 'next/image'
-import { motion } from 'framer-motion'
 
 export default function AboutPage() {
 	return (
@@ -9,18 +7,11 @@ export default function AboutPage() {
 			<div className="max-w-4xl mx-auto px-6 py-16">
 				{/* Avatar + Intro */}
 				<section className="text-center mb-16">
-					<motion.div
+					<ClientMotionWrapper
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.6 }}
 					>
-						<img
-							src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/474743781_2005017523244556_4033394738929818701_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeECgnoeQTJVdLmojIjcTz-a2USHxG-kC6_ZRIfEb6QLrzAL4hc2VgOxIa_9N4yelwKe_fZ1fQZ9nc9FV-Hv4GnO&_nc_ohc=RZPeRQLtHA0Q7kNvwEySVuT&_nc_oc=AdnH7X9ztpkAeCigFBcX3RQul3dX9oecMwU4K8imFfYc26WWlwRDg1ERGlbipgrb5ZM&_nc_zt=23&_nc_ht=scontent.fhan3-2.fna&_nc_gid=RJiqUOVMkGy8iEeuI67qRg&oh=00_AffvuP8qNFR6RyazyRThOTMJcFOHvEVrquU2nd5qCE3v8w&oe=68FB806D"
-							alt="Nguyễn Trần Giang Vỹ"
-							width={800}
-							height={600}
-							className="mx-auto rounded-full border-4 border-purple-500/40 shadow-lg object-cover"
-						/>
 						<h1 className="text-4xl font-bold mt-6 mb-2 bg-gradient-to-r from-purple-400 to-pink-500 text-transparent bg-clip-text">
 							Nguyễn Trần Giang Vỹ
 						</h1>
@@ -28,11 +19,11 @@ export default function AboutPage() {
 							Fullstack Developer • Chủ trang{' '}
 							<span className="text-purple-400">SUBA code bậy nè</span>
 						</p>
-					</motion.div>
+					</ClientMotionWrapper>
 				</section>
 
 				{/* Giới thiệu */}
-				<motion.section
+				<ClientMotionWrapper
 					className="glass-section mb-12"
 					initial={{ opacity: 0, y: 20 }}
 					whileInView={{ opacity: 1, y: 0 }}
@@ -45,10 +36,10 @@ export default function AboutPage() {
 					trang <strong>SUBA code bậy nè</strong>. Hiện tại mình là một{' '}
 					<strong>Fullstack Developer</strong> và những thứ vần <strong>er</strong> khác nữa 😄.
 					</p>
-				</motion.section>
+				</ClientMotionWrapper>
 
 				{/* SUBA */}
-				<motion.section
+				<ClientMotionWrapper
 					className="glass-section mb-12"
 					initial={{ opacity: 0, y: 20 }}
 					whileInView={{ opacity: 1, y: 0 }}
@@ -78,10 +69,10 @@ export default function AboutPage() {
 					yếu tố quyết định sống còn của ngành IT này nè 😄. Nếu đây là lần đầu tiên bạn dừng
 					chân và đọc đến đây, thì mình cũng cảm kích và cảm ơn bạn nhiều nhé!
 					</p>
-				</motion.section>
+				</ClientMotionWrapper>
 
 				{/* Phương châm */}
-				<motion.section
+				<ClientMotionWrapper
 					className="glass-section mb-12"
 					initial={{ opacity: 0, y: 20 }}
 					whileInView={{ opacity: 1, y: 0 }}
@@ -93,20 +84,12 @@ export default function AboutPage() {
 						Không chỉ dán mắt vào máy tính hàng giờ liền, hãy nhớ rằng bạn vẫn còn cuộc sống riêng —
 						còn gia đình và bạn bè nữa. Hãy cân bằng để không bỏ lỡ những điều đẹp nhất nhé 💖.
 					</p>
-					<div className='w-full flex justify-center' >
-						<img 
-						src="https://scontent.fsgn2-9.fna.fbcdn.net/v/t39.30808-6/489790310_2065645380515103_8772902427832805212_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEuTnK_fL66GiK504tmVa3pbgQmBtpAXrFuBCYG2kBesVlgWHST8zo7YanKuzZmuGRZpn_QWIpPJhU-3TMH--M1&_nc_ohc=fXysAjPBg9gQ7kNvwEg2rOK&_nc_oc=AdkWyp_NcVkiSVuGO6wx9Ezop58ohH8f-8A6gFGQZKw1Ch1gvqKdgbtw_K5xGYLUnHg&_nc_zt=23&_nc_ht=scontent.fsgn2-9.fna&_nc_gid=HdEJ4PtqBKkpu1GLyh4hLQ&oh=00_AfcCLNw4oCDVlfAT4GyaRVbscTfkSg6EKCmeXgpxsBbZ_A&oe=6900B392"
-						alt="Chill"
-						width={500}
-						height={300}
-						className="rounded-2xl mt-6 shadow-lg"
-					/>
-					</div>
 					
-				</motion.section>
+					
+				</ClientMotionWrapper>
 
 				{/* Mục tiêu */}
-				<motion.section
+				<ClientMotionWrapper
 					className="glass-section mb-12"
 					initial={{ opacity: 0, y: 20 }}
 					whileInView={{ opacity: 1, y: 0 }}
@@ -126,10 +109,10 @@ export default function AboutPage() {
 						height={500}
 						className="rounded-2xl mt-6 shadow-lg"
 					/>
-				</motion.section>
+				</ClientMotionWrapper>
 
 				{/* Bản thân */}
-				<motion.section
+				<ClientMotionWrapper
 					className="glass-section"
 					initial={{ opacity: 0, y: 20 }}
 					whileInView={{ opacity: 1, y: 0 }}
@@ -152,7 +135,7 @@ export default function AboutPage() {
 						height={500}
 						className="rounded-2xl mt-6 shadow-lg"
 					/>
-				</motion.section>
+				</ClientMotionWrapper>
 			</div>
 		</div>
 	)

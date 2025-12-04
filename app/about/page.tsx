@@ -5,6 +5,10 @@ import AboutMe from "@/components/About/AboutMe";
 
 
 
+export const metadata = {
+  title: "About Me - Mọi thứ về mình",
+  description: "About me | Mọi thứ về mình",
+};
 
 
 
